@@ -240,84 +240,6 @@ body {
   width: 24px;
   height: 24px;
 }
-.hero-content {
-  max-width: 1400px;
-  margin: 0 auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: minmax(0, 2.2fr) minmax(260px, 1fr);
-  gap: 40px;
-  align-items: center;
-}
-
-.hero-side-card {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-subtle);
-  padding: 24px 28px;
-  box-shadow: 0 0 30px rgba(0, 255, 209, 0.12);
-}
-
-.hero-side-card h3 {
-  font-size: 18px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--brand-primary);
-  margin-bottom: 16px;
-}
-
-.hero-side-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.hero-side-card li {
-  font-size: 14px;
-  color: var(--text-secondary);
-}
-
-.hero-side-card .metric {
-  display: block;
-  font-size: 20px;
-  color: var(--text-primary);
-  font-weight: 600;
-}
-
-
-.hero-metrics {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 16px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.hero-metrics li {
-  font-size: 14px;
-  color: var(--text-secondary);
-}
-
-.hero-divider {
-  height: 1px;
-  background: var(--border-subtle);
-  margin: 8px 0 16px 0;
-}
-
-.hero-tags {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-size: 13px;
-  color: var(--text-muted);
-}
-
 
 /* Section Styling */
 .about-section,
@@ -1071,18 +993,6 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .hero-content {
-    display: block;
-  }
-
-  .hero-side-card {
-    margin-top: 32px;
-  }
-
-  /* keep your other mobile rules here... */
-}
-
 @media (max-width: 1024px) {
   .hero-name {
     font-size: 52px;
