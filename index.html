@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan V - Full-Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="dark-header" id="header">
+        <div class="dark-logo-text">PV</div>
+        <nav class="dark-nav">
+            <a href="#home" class="dark-nav-link active" data-section="home">Home</a>
+            <a href="#about" class="dark-nav-link" data-section="about">About</a>
+            <a href="#experience" class="dark-nav-link" data-section="experience">Experience</a>
+            <a href="#projects" class="dark-nav-link" data-section="projects">Projects</a>
+            <a href="#skills" class="dark-nav-link" data-section="skills">Skills</a>
+            <a href="#contact" class="dark-nav-link" data-section="contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting">Hello, I'm</div>
+                <h1 class="hero-name" id="hero-name"></h1>
+                <h2 class="hero-title" id="hero-title"></h2>
+                <p class="hero-tagline" id="hero-tagline"></p>
+                
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('projects')">
+                        View Projects
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                    <a href="#" class="btn-secondary" id="download-resume">
+                        Download Resume
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="hero-social" id="hero-social"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description" id="about-description"></p>
+                    <div class="about-highlights" id="about-highlights"></div>
+                </div>
+                <div class="about-image-container">
+                    <img id="about-image" alt="Profile" class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="section-container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline-container" id="experience-timeline"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid" id="projects-grid"></div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid" id="skills-grid"></div>
+        </div>
+    </section>
+
+    <!-- Education & Publications -->
+    <section id="publications" class="publications-section">
+        <div class="section-container">
+            <h2 class="section-title">Education & Publications</h2>
+            
+            <div class="education-grid" id="education-grid"></div>
+            <div class="publications-list" id="publications-list"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    
+                    <div class="contact-details" id="contact-details"></div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required class="form-input">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required rows="6" class="form-textarea"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">
+                        <span id="form-btn-text">Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                    
+                    <div class="form-success" id="form-success" style="display: none;">Message sent successfully! I'll get back to you soon.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="dark-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2025 <span id="footer-name"></span>. All rights reserved.</p>
+            </div>
+            <div class="footer-social" id="footer-social"></div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
